@@ -1,0 +1,63 @@
+:root {
+	--primary: black;
+	--secondary: rgb(100, 100, 100);
+}
+
+/* common */
+.Container {
+	text-align: left;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	border-radius: 7px;
+	border: 1px solid #ccc;
+	color: var(--primary);
+	transition: 0.3s all ease;
+	height: fit-content;
+}
+
+.Container:hover {
+	background-color: rgb(250, 250, 250) !important;
+	cursor: pointer;
+}
+
+.Secondary {
+	color: var(--secondary);
+}
+
+.LowerContainer {
+	padding: 10px;
+}
+
+.Title {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.Image {
+	width: 100%;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 30vh;
+}
+
+.SiteDetails {
+	margin-top: 10px;
+}
+
+/* sm */
+@media (max-width: 640px) {
+	.Description {
+		display: none;
+	}
+}
+
+/* md */
+@media (min-width: 641px) and (max-width: 768px) {
+	.Description {
+		display: none;
+	}
+}
