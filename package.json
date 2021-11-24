@@ -1,6 +1,6 @@
 {
 	"name": "svelte-link-preview",
-	"version": "0.3.2",
+	"version": "0.3.3",
 	"license": "MIT",
 	"private": false,
 	"description": "Svelte library to preview links.",
