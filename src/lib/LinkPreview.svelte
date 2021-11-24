@@ -9,12 +9,39 @@
 		hostname: string | null;
 	}
 
-	export let url: string = 'https://youtube.com';
+	/**
+	 * The url for which the preview is to be rendered.
+	 */
+	export let url: string;
+
+	/**
+	 * The width of the preview card.
+	 */
 	export let width: string | number = null;
+
+	/**
+	 * The height of the preview card.
+	 */
 	export let height: string | number = null;
+
+	/**
+	 * The class you want to apply to the preview card container.
+	 */
 	export let className: string = '';
+
+	/**
+	 * The image's height.
+	 */
 	export let imageHeight: string | number = null;
+
+	/**
+	 * The alignment of the text inside the card.
+	 */
 	export let textAlign: string = null;
+
+	/**
+	 * A custom fetcher function that fetches and provides the metadata for urls from a source of your choice.
+	 */
 	export let fetcher: (url: string) => Promise<APIResponse | null> = null;
 
 	async function getMetadata(url: string): Promise<APIResponse> {
