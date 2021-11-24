@@ -1,6 +1,25 @@
 {
 	"name": "svelte-link-preview",
 	"version": "0.3.2",
+	"license": "MIT",
+	"private": false,
+	"description": "Svelte library to preview links.",
+	"author": "Dhaiwat Pandya",
+	"keywords": [
+		"svelte",
+		"svelte-link-preview",
+		"link",
+		"preview",
+		"card"
+	],
+	"homepage": "https://github.com/dhaiwat10/svelte-link-preview",
+	"bugs": {
+		"url": "https://github.com/dhaiwat10/svelte-link-preview/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dhaiwat10/svelte-link-preview.git"
+	},
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
