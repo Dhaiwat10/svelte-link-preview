@@ -41,5 +41,11 @@
 		"tslib": "^2.3.1",
 		"typescript": "^4.4.3"
 	},
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"svelte": "./dist/index.js"
+		},
+	"files": ["dist"],
 	"type": "module"
 }
