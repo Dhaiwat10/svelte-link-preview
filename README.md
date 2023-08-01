@@ -5,14 +5,27 @@ Svelte port of [react-link-preview](https://github.com/dhaiwat10/react-link-prev
 ## How to use
 
 ```bash
-yarn add svelte-link-preview
+npm install -D https://github.com/magellancl/svelte-link-preview.git
 ```
 
 ```svelte
 import { LinkPreview } from 'svelte-link-preview';
 
-<LinkPreview url='https://github.com/dhaiwat10'>
+<LinkPreview url='https://github.com/dhaiwat10', proxyUrl='http://localhost:8080'>
 ```
+
+You need to setup your proxy with https://github.com/Rob--W/cors-anywhere.
+Quick setup for a local use :
+```bash
+git clone https://github.com/Rob--W/cors-anywhere.git
+cd cors-anywhere
+npm install
+export PORT=8080
+export CORSANYWHERE_WHITELIST=http://localhost:4173,http://localhost:5173 // Whitelist your domain name
+node server.js
+```
+
+
 
 ## [🔗 Important notes for use in production](https://github.com/Dhaiwat10/react-link-preview#important)
 
