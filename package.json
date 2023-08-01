@@ -1,6 +1,6 @@
 {
-	"name": "magellancl/svelte-link-preview",
-	"version": "0.4.1",
+	"name": "svelte-link-preview",
+	"version": "0.4.2",
 	"license": "MIT",
 	"private": false,
 	"description": "Svelte library to preview links.",
